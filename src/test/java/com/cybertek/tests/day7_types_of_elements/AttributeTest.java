@@ -27,7 +27,7 @@ public class AttributeTest {
         //get the value of name attribute
         System.out.println(blueRadioBtn.getAttribute("name"));
 
-        //since checked attribute does not have a value then it will return treu or false
+        //since checked attribute does not have a value then it will return true or false
         System.out.println(blueRadioBtn.getAttribute("checked"));
 
         //whn we use non-existent attribute it will return null
