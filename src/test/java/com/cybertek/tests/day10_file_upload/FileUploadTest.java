@@ -28,12 +28,16 @@ public class FileUploadTest {
     }
 
     @Test
-    public void test1(){
+    public void test1() throws InterruptedException {
         driver.get("http://practice.cybertekschool.com/upload");
 
         WebElement chooseFile = driver.findElement(By.name("file"));
 
+        Thread.sleep(2000);
+
         chooseFile.sendKeys("C:\\Users\\59645\\OneDrive - Grundfos\\Desktop\\file.txt");
+
+        Thread.sleep(2000);
 
         driver.findElement(By.id("file-submit")).click();
 
